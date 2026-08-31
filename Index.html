@@ -1,0 +1,577 @@
+html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>IPTV.UK | TV Channels & Movies</title>
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #050505;
+  color: white;
+}
+
+header {
+  background: #0b0b0b;
+  padding: 20px 7%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #222;
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.logo span {
+  color: #00d9ff;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 22px;
+}
+
+nav a:hover {
+  color: #00d9ff;
+}
+
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+  background: radial-gradient(circle, #181818, #050505 70%);
+}
+
+.hero h1 {
+  font-size: 52px;
+  margin-bottom: 15px;
+}
+
+.hero h1 span {
+  color: #00d9ff;
+}
+
+.hero p {
+  color: #aaa;
+  font-size: 18px;
+  max-width: 650px;
+  margin: auto;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 13px 25px;
+  background: #00d9ff;
+  color: #000;
+  text-decoration: none;
+  border-radius: 7px;
+  font-weight: bold;
+}
+
+section {
+  padding: 70px 7%;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.title h2 {
+  font-size: 34px;
+  margin-bottom: 10px;
+}
+
+.title p {
+  color: #999;
+}
+
+/* FEATURES */
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.feature {
+  background: #101010;
+  border: 1px solid #252525;
+  padding: 30px;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.icon {
+  font-size: 40px;
+}
+
+.feature h3 {
+  margin: 15px 0 10px;
+}
+
+.feature p {
+  color: #aaa;
+}
+
+/* PLANS */
+
+.plans {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+  max-width: 950px;
+  margin: auto;
+}
+
+.plan {
+  background: #101010;
+  border: 1px solid #292929;
+  border-radius: 15px;
+  padding: 30px;
+}
+
+.plan.premium {
+  border: 1px solid #00d9ff;
+}
+
+.plan h3 {
+  font-size: 28px;
+  margin-bottom: 25px;
+}
+
+.duration {
+  border-bottom: 1px solid #292929;
+  padding: 18px 0;
+}
+
+.duration-title {
+  font-size: 19px;
+  font-weight: bold;
+}
+
+.price {
+  float: right;
+  color: #00d9ff;
+  font-size: 20px;
+}
+
+.characteristics {
+  margin-top: 10px;
+}
+
+.characteristics p {
+  color: #aaa;
+  font-size: 14px;
+  padding: 4px 0;
+}
+
+/* CREDITS */
+
+.credits {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  max-width: 950px;
+  margin: auto;
+}
+
+.credit-card {
+  background: #101010;
+  border: 1px solid #292929;
+  padding: 30px;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.credit-card h3 {
+  font-size: 25px;
+}
+
+.credit-price {
+  color: #00d9ff;
+  font-size: 21px;
+  font-weight: bold;
+  margin-top: 12px;
+}
+
+/* CONTACT */
+
+.contact {
+  text-align: center;
+  background: #0b0b0b;
+}
+
+/* FOOTER */
+
+footer {
+  text-align: center;
+  padding: 25px;
+  color: #777;
+  border-top: 1px solid #222;
+}
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+
+  nav {
+    display: none;
+  }
+
+  .hero h1 {
+    font-size: 38px;
+  }
+
+  .features,
+  .plans,
+  .credits {
+    grid-template-columns: 1fr;
+  }
+
+  section {
+    padding: 50px 5%;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+
+<header>
+
+  <div class="logo">
+    IPTV<span>.UK</span>
+  </div>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#features">Features</a>
+    <a href="#plans">Plans</a>
+    <a href="#credits">Credits</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+</header>
+
+
+<!-- HERO -->
+
+<section class="hero" id="home">
+
+  <h1>Welcome to <span>IPTV.UK</span></h1>
+
+  <p>
+    TV channels, movies and entertainment through
+    our streaming service.
+  </p>
+
+  <a class="btn"
+     href="https://wa.me/447350480697"
+     target="_blank">
+     Contact on WhatsApp
+  </a>
+
+</section>
+
+
+<!-- FEATURES -->
+
+<section id="features">
+
+  <div class="title">
+    <h2>Entertainment</h2>
+    <p>Explore available content and supported devices.</p>
+  </div>
+
+  <div class="features">
+
+    <div class="feature">
+      <div class="icon">📺</div>
+      <h3>Live TV Channels</h3>
+      <p>
+        Access available live TV channels
+        with your selected plan.
+      </p>
+    </div>
+
+    <div class="feature">
+      <div class="icon">🎬</div>
+      <h3>Movies</h3>
+      <p>
+        Enjoy available movies and
+        entertainment content.
+      </p>
+    </div>
+
+    <div class="feature">
+      <div class="icon">📱</div>
+      <h3>Multiple Devices</h3>
+      <p>
+        Use supported Smart TVs, phones,
+        tablets and streaming devices.
+      </p>
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- PLANS -->
+
+<section id="plans">
+
+  <div class="title">
+    <h2>Subscription Plans</h2>
+    <p>Choose Basic or Premium.</p>
+  </div>
+
+
+  <div class="plans">
+
+
+    <!-- BASIC -->
+
+    <div class="plan">
+
+      <h3>Basic</h3>
+
+      <div class="duration">
+
+        <div class="duration-title">
+          Monthly
+          <span class="price">£10</span>
+        </div>
+
+        <div class="characteristics">
+          <p>✓ Live TV Channels</p>
+          <p>✓ Movies & Entertainment</p>
+          <p>✓ Supported Devices</p>
+          <p>✓ Customer Support</p>
+        </div>
+
+      </div>
+
+
+      <div class="duration">
+
+        <div class="duration-title">
+          3 Months
+          <span class="price">£25</span>
+        </div>
+
+        <div class="characteristics">
+          <p>✓ Live TV Channels</p>
+          <p>✓ Movies & Entertainment</p>
+          <p>✓ Supported Devices</p>
+          <p>✓ Customer Support</p>
+        </div>
+
+      </div>
+
+
+      <div class="duration">
+
+        <div class="duration-title">
+          Yearly
+          <span class="price">£49.99</span>
+        </div>
+
+        <div class="characteristics">
+          <p>✓ Live TV Channels</p>
+          <p>✓ Movies & Entertainment</p>
+          <p>✓ Supported Devices</p>
+          <p>✓ Customer Support</p>
+        </div>
+
+      </div>
+
+
+      <a class="btn"
+         href="https://wa.me/447350480697"
+         target="_blank">
+         Order Basic
+      </a>
+
+    </div>
+
+
+    <!-- PREMIUM -->
+
+    <div class="plan premium">
+
+      <h3>Premium</h3>
+
+      <div class="duration">
+
+        <div class="duration-title">
+          Monthly
+          <span class="price">£14</span>
+        </div>
+
+        <div class="characteristics">
+          <p>✓ Live TV Channels</p>
+          <p>✓ Movies & Entertainment</p>
+          <p>✓ HD / 4K where available</p>
+          <p>✓ Supported Devices</p>
+          <p>✓ Priority Support</p>
+        </div>
+
+      </div>
+
+
+      <div class="duration">
+
+        <div class="duration-title">
+          3 Months
+          <span class="price">£35</span>
+        </div>
+
+        <div class="characteristics">
+          <p>✓ Live TV Channels</p>
+          <p>✓ Movies & Entertainment</p>
+          <p>✓ HD / 4K where available</p>
+          <p>✓ Supported Devices</p>
+          <p>✓ Priority Support</p>
+        </div>
+
+      </div>
+
+
+      <div class="duration">
+
+        <div class="duration-title">
+          Yearly
+          <span class="price">£69.99</span>
+        </div>
+
+        <div class="characteristics">
+          <p>✓ Live TV Channels</p>
+          <p>✓ Movies & Entertainment</p>
+          <p>✓ HD / 4K where available</p>
+          <p>✓ Supported Devices</p>
+          <p>✓ Priority Support</p>
+        </div>
+
+      </div>
+
+
+      <a class="btn"
+         href="https://wa.me/447350480697"
+         target="_blank">
+         Order Premium
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- CREDIT PLANS -->
+
+<section id="credits">
+
+  <div class="title">
+    <h2>Credit Plans</h2>
+    <p>Choose your preferred credit package.</p>
+  </div>
+
+
+  <div class="credits">
+
+    <div class="credit-card">
+      <h3>50 Credits</h3>
+      <div class="credit-price">
+        £2 / Credit
+      </div>
+
+      <a class="btn"
+         href="https://wa.me/447350480697"
+         target="_blank">
+         Enquire
+      </a>
+    </div>
+
+
+    <div class="credit-card">
+      <h3>100 Credits</h3>
+      <div class="credit-price">
+        £1.50 / Credit
+      </div>
+
+      <a class="btn"
+         href="https://wa.me/447350480697"
+         target="_blank">
+         Enquire
+      </a>
+    </div>
+
+
+    <div class="credit-card">
+      <h3>200 Credits</h3>
+      <div class="credit-price">
+        £1.50 / Credit
+      </div>
+
+      <a class="btn"
+         href="https://wa.me/447350480697"
+         target="_blank">
+         Enquire
+      </a>
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- CONTACT -->
+
+<section class="contact" id="contact">
+
+  <div class="title">
+
+    <h2>Get Started</h2>
+
+    <p>
+      Contact us on WhatsApp for information
+      and support.
+    </p>
+
+    <a class="btn"
+       href="https://wa.me/447350480697"
+       target="_blank">
+       WhatsApp Us
+    </a>
+
+  </div>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+  © 2026 IPTV.UK — All rights reserved.
+
+</footer>
+
+</body>
+      </html>
